@@ -1,0 +1,12 @@
+{
+    "name": "lizus/wp-optimize",
+    "description": "wp optimize",
+    "type": "library",
+    "license": "GPL-2.0-or-later",
+    "authors": [{
+        "name": "lizus",
+        "email": "lizus.com@gmail.com"
+    }],
+    "minimum-stability": "dev",
+    "require": {}
+}
