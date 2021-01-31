@@ -1,6 +1,7 @@
 <?php
 //百度资源平台链接主动提交，参考： https://ziyuan.baidu.com/linksubmit/index
 add_action( "save_post", function ($pid,$post){
+  if($post->post_type == 'nav_menu_item') return;
   if (defined('BAIDU_PUSH_API') && !empty(BAIDU_PUSH_API)) {
     if($post->post_status != 'publish') return;
     $urls=[get_permalink($pid)];
