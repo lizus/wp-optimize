@@ -21,4 +21,6 @@ add_action( 'admin_menu' , function (){
   remove_submenu_page( 'themes.php', 'theme-editor.php' );
   remove_submenu_page( 'options-general.php', 'options-writing.php' );
   remove_submenu_page( 'options-general.php', 'options-privacy.php' );
+  //删除“仪表盘”下面的子菜单“更新”
+  remove_submenu_page('index.php','update-core.php');
 } ,999);
